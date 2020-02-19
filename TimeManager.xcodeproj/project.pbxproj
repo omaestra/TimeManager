@@ -3,25 +3,83 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312962F32359C311006E9F69 /* SessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312962F22359C311006E9F69 /* SessionFactory.swift */; };
+		312962F62359D64E006E9F69 /* PomodoroModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 312962F42359D64E006E9F69 /* PomodoroModel.xcdatamodeld */; };
+		312962F92359EA46006E9F69 /* SessionCoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312962F82359EA46006E9F69 /* SessionCoreDataRepository.swift */; };
+		312962FB2359EA4E006E9F69 /* PomodoroCoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312962FA2359EA4E006E9F69 /* PomodoroCoreDataRepository.swift */; };
+		312962FD2359EA62006E9F69 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312962FC2359EA62006E9F69 /* Repository.swift */; };
+		312962FF2359EEBE006E9F69 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312962FE2359EEBE006E9F69 /* CoreDataManager.swift */; };
+		312963012359EF1F006E9F69 /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312963002359EF1F006E9F69 /* CoreDataRepository.swift */; };
+		312963042359F8ED006E9F69 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312963032359F8ED006E9F69 /* Statistics.storyboard */; };
+		312963062359F956006E9F69 /* StatisticsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312963052359F956006E9F69 /* StatisticsTableViewController.swift */; };
+		312963082359FBF1006E9F69 /* StatisticsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312963072359FBF1006E9F69 /* StatisticsPresenter.swift */; };
 		3153BB18234644BA00327542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB17234644BA00327542 /* AppDelegate.swift */; };
 		3153BB1A234644BA00327542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB19234644BA00327542 /* ViewController.swift */; };
 		3153BB1D234644BA00327542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3153BB1B234644BA00327542 /* Main.storyboard */; };
-		3153BB1F234644BB00327542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3153BB1E234644BB00327542 /* Assets.xcassets */; };
 		3153BB22234644BB00327542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3153BB20234644BB00327542 /* LaunchScreen.storyboard */; };
+		3153BB322346477C00327542 /* WorkSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3153BB312346477C00327542 /* WorkSession.storyboard */; };
+		3153BB3523464D6B00327542 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB3423464D6B00327542 /* CircularProgressBar.swift */; };
+		3153BB37234656C200327542 /* WorkSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB36234656C200327542 /* WorkSessionViewController.swift */; };
+		3153BB392346592D00327542 /* WorkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB382346592D00327542 /* WorkSession.swift */; };
+		3153BB3B234659A100327542 /* SessionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB3A234659A100327542 /* SessionInterval.swift */; };
+		3153BB3D23465AE500327542 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB3C23465AE500327542 /* Session.swift */; };
+		3153BB3F23465BF600327542 /* CircularTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB3E23465BF600327542 /* CircularTimerView.swift */; };
+		3153BB4123465CF800327542 /* WorkSessionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB4023465CF800327542 /* WorkSessionPresenter.swift */; };
+		3153BB4323465F1D00327542 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BB4223465F1D00327542 /* Task.swift */; };
+		31BF14B723911D21006764BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BF14B623911D20006764BA /* Assets.xcassets */; };
+		31FFEA92234F52210049E7D6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FFEA91234F52210049E7D6 /* Settings.storyboard */; };
+		31FFEA95234F57390049E7D6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FFEA94234F57390049E7D6 /* SettingsTableViewController.swift */; };
+		31FFEA97234F83FE0049E7D6 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FFEA96234F83FE0049E7D6 /* SettingsPresenter.swift */; };
+		31FFEA99234F86650049E7D6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31FFEA98234F86650049E7D6 /* Settings.bundle */; };
+		31FFEA9B234F95570049E7D6 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FFEA9A234F95570049E7D6 /* UserDefaults+.swift */; };
+		31FFEA9E234F986D0049E7D6 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FFEA9D234F986D0049E7D6 /* TasksTableViewController.swift */; };
+		31FFEAA0234F98810049E7D6 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FFEA9F234F98810049E7D6 /* Task.storyboard */; };
+		31FFEAA2234FA3860049E7D6 /* TaskDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FFEAA1234FA3860049E7D6 /* TaskDetailsTableViewController.swift */; };
+		47E7D50F78C0200B0293FFD2 /* Pods_TimeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA581B1C347DE5A7BB0C19C2 /* Pods_TimeManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312962F22359C311006E9F69 /* SessionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFactory.swift; sourceTree = "<group>"; };
+		312962F52359D64E006E9F69 /* PomodoroModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomodoroModel.xcdatamodel; sourceTree = "<group>"; };
+		312962F82359EA46006E9F69 /* SessionCoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCoreDataRepository.swift; sourceTree = "<group>"; };
+		312962FA2359EA4E006E9F69 /* PomodoroCoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroCoreDataRepository.swift; sourceTree = "<group>"; };
+		312962FC2359EA62006E9F69 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		312962FE2359EEBE006E9F69 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		312963002359EF1F006E9F69 /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		312963032359F8ED006E9F69 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		312963052359F956006E9F69 /* StatisticsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewController.swift; sourceTree = "<group>"; };
+		312963072359FBF1006E9F69 /* StatisticsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPresenter.swift; sourceTree = "<group>"; };
 		3153BB14234644BA00327542 /* TimeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3153BB17234644BA00327542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3153BB19234644BA00327542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3153BB1C234644BA00327542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3153BB1E234644BB00327542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3153BB21234644BB00327542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3153BB23234644BB00327542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3153BB312346477C00327542 /* WorkSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkSession.storyboard; sourceTree = "<group>"; };
+		3153BB3423464D6B00327542 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		3153BB36234656C200327542 /* WorkSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSessionViewController.swift; sourceTree = "<group>"; };
+		3153BB382346592D00327542 /* WorkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSession.swift; sourceTree = "<group>"; };
+		3153BB3A234659A100327542 /* SessionInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInterval.swift; sourceTree = "<group>"; };
+		3153BB3C23465AE500327542 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		3153BB3E23465BF600327542 /* CircularTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimerView.swift; sourceTree = "<group>"; };
+		3153BB4023465CF800327542 /* WorkSessionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSessionPresenter.swift; sourceTree = "<group>"; };
+		3153BB4223465F1D00327542 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		31BF14B623911D20006764BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31FFEA91234F52210049E7D6 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		31FFEA94234F57390049E7D6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		31FFEA96234F83FE0049E7D6 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		31FFEA98234F86650049E7D6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		31FFEA9A234F95570049E7D6 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		31FFEA9D234F986D0049E7D6 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		31FFEA9F234F98810049E7D6 /* Task.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		31FFEAA1234FA3860049E7D6 /* TaskDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsTableViewController.swift; sourceTree = "<group>"; };
+		9FE76AE8ADC36DAA5BABC435 /* Pods-TimeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManager.debug.xcconfig"; path = "Target Support Files/Pods-TimeManager/Pods-TimeManager.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD2F244BCD9977D60A76C3D /* Pods-TimeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManager.release.xcconfig"; path = "Target Support Files/Pods-TimeManager/Pods-TimeManager.release.xcconfig"; sourceTree = "<group>"; };
+		FA581B1C347DE5A7BB0C19C2 /* Pods_TimeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +87,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7D50F78C0200B0293FFD2 /* Pods_TimeManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0492DAF0851FEAE15F84F053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA581B1C347DE5A7BB0C19C2 /* Pods_TimeManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		312962F72359EA28006E9F69 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				312962F82359EA46006E9F69 /* SessionCoreDataRepository.swift */,
+				312962FA2359EA4E006E9F69 /* PomodoroCoreDataRepository.swift */,
+				312962FC2359EA62006E9F69 /* Repository.swift */,
+				312962FE2359EEBE006E9F69 /* CoreDataManager.swift */,
+				312963002359EF1F006E9F69 /* CoreDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		312963022359F8DC006E9F69 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				312963052359F956006E9F69 /* StatisticsTableViewController.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
 		3153BB0B234644BA00327542 = {
 			isa = PBXGroup;
 			children = (
 				3153BB16234644BA00327542 /* TimeManager */,
 				3153BB15234644BA00327542 /* Products */,
+				B5329A13AEACE439D5E3C21D /* Pods */,
+				0492DAF0851FEAE15F84F053 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +143,126 @@
 		3153BB16234644BA00327542 /* TimeManager */ = {
 			isa = PBXGroup;
 			children = (
+				31BF14B623911D20006764BA /* Assets.xcassets */,
+				312962F72359EA28006E9F69 /* Repository */,
 				3153BB17234644BA00327542 /* AppDelegate.swift */,
-				3153BB19234644BA00327542 /* ViewController.swift */,
-				3153BB1B234644BA00327542 /* Main.storyboard */,
-				3153BB1E234644BB00327542 /* Assets.xcassets */,
-				3153BB20234644BB00327542 /* LaunchScreen.storyboard */,
 				3153BB23234644BB00327542 /* Info.plist */,
+				3153BB302346457100327542 /* Helpers */,
+				3153BB2E2346453F00327542 /* Resources */,
+				3153BB2C234644DB00327542 /* Supporting Files */,
+				3153BB2B234644D400327542 /* Presenter */,
+				3153BB2A234644D100327542 /* View */,
+				3153BB29234644C700327542 /* Model */,
 			);
 			path = TimeManager;
+			sourceTree = "<group>";
+		};
+		3153BB29234644C700327542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3153BB382346592D00327542 /* WorkSession.swift */,
+				3153BB3A234659A100327542 /* SessionInterval.swift */,
+				3153BB3C23465AE500327542 /* Session.swift */,
+				3153BB4223465F1D00327542 /* Task.swift */,
+				312962F22359C311006E9F69 /* SessionFactory.swift */,
+				312962F42359D64E006E9F69 /* PomodoroModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3153BB2A234644D100327542 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				312963022359F8DC006E9F69 /* Statistics */,
+				31FFEA9C234F98650049E7D6 /* Task */,
+				31FFEA93234F572A0049E7D6 /* Settings */,
+				3153BB33234648AC00327542 /* WorkSession */,
+				3153BB19234644BA00327542 /* ViewController.swift */,
+				3153BB3423464D6B00327542 /* CircularProgressBar.swift */,
+				3153BB3E23465BF600327542 /* CircularTimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3153BB2B234644D400327542 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3153BB4023465CF800327542 /* WorkSessionPresenter.swift */,
+				31FFEA96234F83FE0049E7D6 /* SettingsPresenter.swift */,
+				312963072359FBF1006E9F69 /* StatisticsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3153BB2C234644DB00327542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31FFEA98234F86650049E7D6 /* Settings.bundle */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3153BB2E2346453F00327542 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3153BB2F2346454400327542 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3153BB2F2346454400327542 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3153BB1B234644BA00327542 /* Main.storyboard */,
+				3153BB20234644BB00327542 /* LaunchScreen.storyboard */,
+				3153BB312346477C00327542 /* WorkSession.storyboard */,
+				31FFEA91234F52210049E7D6 /* Settings.storyboard */,
+				31FFEA9F234F98810049E7D6 /* Task.storyboard */,
+				312963032359F8ED006E9F69 /* Statistics.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3153BB302346457100327542 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				31FFEA9A234F95570049E7D6 /* UserDefaults+.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3153BB33234648AC00327542 /* WorkSession */ = {
+			isa = PBXGroup;
+			children = (
+				3153BB36234656C200327542 /* WorkSessionViewController.swift */,
+			);
+			path = WorkSession;
+			sourceTree = "<group>";
+		};
+		31FFEA93234F572A0049E7D6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				31FFEA94234F57390049E7D6 /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		31FFEA9C234F98650049E7D6 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				31FFEA9D234F986D0049E7D6 /* TasksTableViewController.swift */,
+				31FFEAA1234FA3860049E7D6 /* TaskDetailsTableViewController.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		B5329A13AEACE439D5E3C21D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FE76AE8ADC36DAA5BABC435 /* Pods-TimeManager.debug.xcconfig */,
+				CDD2F244BCD9977D60A76C3D /* Pods-TimeManager.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3153BB26234644BB00327542 /* Build configuration list for PBXNativeTarget "TimeManager" */;
 			buildPhases = (
+				73042E17D54F8FE75A12F642 /* [CP] Check Pods Manifest.lock */,
 				3153BB10234644BA00327542 /* Sources */,
 				3153BB11234644BA00327542 /* Frameworks */,
 				3153BB12234644BA00327542 /* Resources */,
+				3735664A00C19D733B33B6F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +325,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3153BB322346477C00327542 /* WorkSession.storyboard in Resources */,
 				3153BB22234644BB00327542 /* LaunchScreen.storyboard in Resources */,
-				3153BB1F234644BB00327542 /* Assets.xcassets in Resources */,
+				31FFEAA0234F98810049E7D6 /* Task.storyboard in Resources */,
 				3153BB1D234644BA00327542 /* Main.storyboard in Resources */,
+				31FFEA99234F86650049E7D6 /* Settings.bundle in Resources */,
+				31FFEA92234F52210049E7D6 /* Settings.storyboard in Resources */,
+				31BF14B723911D21006764BA /* Assets.xcassets in Resources */,
+				312963042359F8ED006E9F69 /* Statistics.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3735664A00C19D733B33B6F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeManager/Pods-TimeManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeManager/Pods-TimeManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeManager/Pods-TimeManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73042E17D54F8FE75A12F642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3153BB10234644BA00327542 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3153BB3D23465AE500327542 /* Session.swift in Sources */,
+				3153BB4123465CF800327542 /* WorkSessionPresenter.swift in Sources */,
+				31FFEAA2234FA3860049E7D6 /* TaskDetailsTableViewController.swift in Sources */,
+				31FFEA9B234F95570049E7D6 /* UserDefaults+.swift in Sources */,
+				3153BB4323465F1D00327542 /* Task.swift in Sources */,
+				312962F92359EA46006E9F69 /* SessionCoreDataRepository.swift in Sources */,
+				31FFEA95234F57390049E7D6 /* SettingsTableViewController.swift in Sources */,
+				312962FD2359EA62006E9F69 /* Repository.swift in Sources */,
+				312963012359EF1F006E9F69 /* CoreDataRepository.swift in Sources */,
+				3153BB37234656C200327542 /* WorkSessionViewController.swift in Sources */,
 				3153BB1A234644BA00327542 /* ViewController.swift in Sources */,
+				3153BB3F23465BF600327542 /* CircularTimerView.swift in Sources */,
+				3153BB3523464D6B00327542 /* CircularProgressBar.swift in Sources */,
+				312962FF2359EEBE006E9F69 /* CoreDataManager.swift in Sources */,
+				3153BB3B234659A100327542 /* SessionInterval.swift in Sources */,
+				312962F32359C311006E9F69 /* SessionFactory.swift in Sources */,
+				312962FB2359EA4E006E9F69 /* PomodoroCoreDataRepository.swift in Sources */,
+				312962F62359D64E006E9F69 /* PomodoroModel.xcdatamodeld in Sources */,
+				3153BB392346592D00327542 /* WorkSession.swift in Sources */,
 				3153BB18234644BA00327542 /* AppDelegate.swift in Sources */,
+				31FFEA9E234F986D0049E7D6 /* TasksTableViewController.swift in Sources */,
+				312963062359F956006E9F69 /* StatisticsTableViewController.swift in Sources */,
+				31FFEA97234F83FE0049E7D6 /* SettingsPresenter.swift in Sources */,
+				312963082359FBF1006E9F69 /* StatisticsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +552,7 @@
 		};
 		3153BB27234644BB00327542 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE76AE8ADC36DAA5BABC435 /* Pods-TimeManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +571,7 @@
 		};
 		3153BB28234644BB00327542 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD2F244BCD9977D60A76C3D /* Pods-TimeManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +610,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		312962F42359D64E006E9F69 /* PomodoroModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				312962F52359D64E006E9F69 /* PomodoroModel.xcdatamodel */,
+			);
+			currentVersion = 312962F52359D64E006E9F69 /* PomodoroModel.xcdatamodel */;
+			path = PomodoroModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3153BB0C234644BA00327542 /* Project object */;
 }

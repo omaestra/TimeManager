@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZx-yb-JH2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Statistics-->
+        <scene sceneID="2nq-5X-zZB">
+            <objects>
+                <tableViewController id="pCz-uw-Kym" customClass="StatisticsTableViewController" customModule="TimeManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GPC-1g-tMT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="72P-6K-Het">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="256" id="A6Z-g8-hAG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A6Z-g8-hAG" id="5Pq-H5-SqG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="255.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV4-P8-PuP">
+                                                    <rect key="frame" x="15" y="15" width="384" height="225.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J2-Fj-jOl" customClass="LineChartView" customModule="Charts">
+                                                            <rect key="frame" x="15" y="15" width="354" height="195.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="6J2-Fj-jOl" secondAttribute="trailing" constant="15" id="60w-fG-ZI4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6J2-Fj-jOl" secondAttribute="bottom" constant="15" id="f3n-9A-LJh"/>
+                                                        <constraint firstItem="6J2-Fj-jOl" firstAttribute="top" secondItem="JV4-P8-PuP" secondAttribute="top" constant="15" id="gy1-2d-qly"/>
+                                                        <constraint firstItem="6J2-Fj-jOl" firstAttribute="leading" secondItem="JV4-P8-PuP" secondAttribute="leading" constant="15" id="tot-QM-OW7"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JV4-P8-PuP" firstAttribute="leading" secondItem="5Pq-H5-SqG" secondAttribute="leading" constant="15" id="VxT-6S-D74"/>
+                                                <constraint firstAttribute="bottom" secondItem="JV4-P8-PuP" secondAttribute="bottom" constant="15" id="WuW-7v-5dc"/>
+                                                <constraint firstAttribute="trailing" secondItem="JV4-P8-PuP" secondAttribute="trailing" constant="15" id="eUl-sU-Ran"/>
+                                                <constraint firstItem="JV4-P8-PuP" firstAttribute="top" secondItem="5Pq-H5-SqG" secondAttribute="top" constant="15" id="fWv-4u-K9c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="pCz-uw-Kym" id="eNX-I3-nUq"/>
+                            <outlet property="delegate" destination="pCz-uw-Kym" id="2wY-dm-8o3"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="statistics" id="NWE-ZG-Ib5"/>
+                    <navigationItem key="navigationItem" id="OMe-id-pks"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="6J2-Fj-jOl" id="LHL-Sf-dd5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFA-GO-Wsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228.985507246377" y="-180.13392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Hd-CW-2Sy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UZx-yb-JH2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cI6-8E-pqy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pCz-uw-Kym" kind="relationship" relationship="rootViewController" id="BV1-aJ-go8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vp7-aV-SeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="-180.13392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="statistics" width="25" height="25"/>
+    </resources>
+</document>
